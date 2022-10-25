@@ -1,7 +1,7 @@
 var audio = document.createElement('audio');
 audio.setAttribute('src','car audio.m4a');
 audio.loop=true;
-//audio.play();
+audio.play();
 
 // $(document).ready(function(){
 //     $surface=$('.surface');

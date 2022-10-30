@@ -1,7 +1,7 @@
-var audio = document.createElement('audio');
-audio.setAttribute('src','car audio.m4a');
-audio.loop=true;
-audio.play();
+// var audio = document.createElement('audio');
+// audio.setAttribute('src','car audio.m4a');
+// audio.loop=true;
+// audio.play();
 
 // $(document).ready(function(){
 //     $surface=$('.surface');
@@ -14,13 +14,20 @@ audio.play();
 //     })
 // });
 
-// function start()
-// {
-//     setInterval(run,100);
+m=0;
+var y;
+function start()
+{
+    var y=setInterval(run,100);
+    function run()
+     {
+       m+=5;
+       var x= document.getElementById("img");
+        x.style.marginLeft=m+'px';
+     }
+}
 
-// function run() {
-//     m+=5;
-//   var x= document.getElementById("img");
-//   x.style.marginLeft=m+'px';
-// }
-// }
+function stop()
+{
+    clearInterval(y)
+}

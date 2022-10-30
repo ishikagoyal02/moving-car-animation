@@ -37,7 +37,7 @@
     background-repeat: no-repeat;
     position: absolute;
     left: 44px;
-    bottom: 205px;
+    bottom: 190px;
     animation: linear .2s infinite ;
     
 }
@@ -45,16 +45,17 @@
 .wheel1 img{
     width: 65px;
     left: 484.5px;
-    animation: wheelRotation linear .6s infinite ;
-    margin: 61px 0 0 250px;
+    animation: wheelRotation linear .6s infinite;
+    margin-left: 40px;
+    margin-top: 50px;
 }
 
 .wheel2 img{
     width: 63px;
     left: 695px;
-    margin-left: 40px;
-    margin-top: -80px;
-    animation: wheelRotation linear .6s infinite ;
+    margin-left: 250px;
+    margin-top: -900px;
+    animation: wheelRotation linear .6s infinite;
 }
 
 @keyframes wheelRotation

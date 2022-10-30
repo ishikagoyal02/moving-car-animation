@@ -25,8 +25,7 @@
     right: 0;
     z-index: 1;
     top: 70vh;
-    animation:  carMove linear 5s infinite ;
-    
+    animation:  carMove linear 10s infinite ;
 }
 
 .car{
@@ -37,17 +36,18 @@
     background-repeat: no-repeat;
     position: absolute;
     left: 44px;
-    bottom: 190px;
-    animation: linear .2s infinite ;
+    bottom: 206px;
+    animation: linear .1s infinite ;
     
 }
 
 .wheel1 img{
     width: 65px;
     left: 484.5px;
-    animation: wheelRotation linear .6s infinite;
+    animation: wheelRotation linear .3s infinite;
     margin-left: 40px;
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-bottom: -27px;
 }
 
 .wheel2 img{
@@ -55,7 +55,7 @@
     left: 695px;
     margin-left: 250px;
     margin-top: -900px;
-    animation: wheelRotation linear .6s infinite;
+    animation: wheelRotation linear .3s infinite;
 }
 
 @keyframes wheelRotation

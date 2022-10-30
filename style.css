@@ -5,7 +5,7 @@
 .sky{
     height: 100vh;
     width: 100%;
-    background-image: url(background.png);
+    background-image: url(./Images/background.png);
     background-size: cover;
     background-position: center ;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
     height: 200px;
     width: 900vw;
     display: block;
-    background-image: url(track.png);
+    background-image: url(./Images/track.png);
     position: absolute;
     background-repeat: repeat-x;
     bottom: 0;
@@ -25,38 +25,35 @@
     right: 0;
     z-index: 1;
     top: 70vh;
-    animation:  carMove linear 6s infinite ;
+    animation:  carMove linear 5s infinite ;
     
 }
 
 .car{
     height: 108px;
     width: 360px;
-    background-image: url(car.png);
+    background-image: url(./Images/car.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    left: 444px;
-    bottom: 201px;
-    animation: shake linear .2s infinite ;
+    left: 44px;
+    bottom: 205px;
+    animation: linear .2s infinite ;
     
 }
 
 .wheel1 img{
     width: 65px;
-    position: relative;
-    top: 358px;
     left: 484.5px;
-    bottom: 10px;
     animation: wheelRotation linear .6s infinite ;
+    margin: 61px 0 0 250px;
 }
 
 .wheel2 img{
     width: 63px;
-    position: absolute;
-    top: 407px;
     left: 695px;
-    bottom: 16px;
+    margin-left: 40px;
+    margin-top: -80px;
     animation: wheelRotation linear .6s infinite ;
 }
 
@@ -101,14 +98,15 @@
 }
 
 #btn{
-    background-color: yellow;
+    background-color: #49E501;
     width: 100px;
     font-size:30px;
     margin-top:10px;
     left:100px;
 }
+
 #dbtn{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items:center;
 }

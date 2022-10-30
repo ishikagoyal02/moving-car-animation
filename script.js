@@ -1,5 +1,5 @@
 // var audio = document.createElement('audio');
-// audio.setAttribute('src','car audio.m4a');
+// audio.setAttribute('src','./music/car audio.m4a');
 // audio.loop=true;
 // audio.play();
 
@@ -7,27 +7,41 @@
 //     $surface=$('.surface');
 //     $car=$('.car');
 
-//     $(document).on('ketpress',function(e){
+//     $(document).on('keypress',function(e){
 //         if(e.which==13){
 //             $($surface).toggleClass('moveRight');
 //         }
 //     })
 // });
 
-m=0;
-var y;
+var x;
+var m=0;
 function start()
 {
-    var y=setInterval(run,100);
-    function run()
-     {
-       m+=5;
-       var x= document.getElementById("img");
-        x.style.marginLeft=m+'px';
-     }
+ x=setInterval(anim,100);
+ 
+  function anim()
+  {
+      
+      console.log(m);
+        if(m==1200)
+        {
+            clearInterval(x);           
+            m=0;
+        }
+        
+        else
+        {
+            m=m+5;
+            document.getElementById("car");
+            var target=document.getElementById("car");
+            target.style.marginLeft=m+'px';
+        }
+   }
+
 }
 
 function stop()
 {
-    clearInterval(y)
+    clearInterval(x)
 }

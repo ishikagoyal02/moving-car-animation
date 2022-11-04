@@ -24,7 +24,7 @@
     left: 0;
     right: 0;
     z-index: 1;
-    top: 65vh;
+    top: 68vh;
     animation:  carMove linear 10s infinite ;
 }
 

@@ -14,7 +14,7 @@
 }
 
 .track{
-    height: 200px;
+    height: 800px;
     width: 900vw;
     display: block;
     background-image: url(./Images/track.png);
@@ -24,7 +24,7 @@
     left: 0;
     right: 0;
     z-index: 1;
-    top: 68vh;
+    top: 65vh;
     animation:  carMove linear 10s infinite ;
 }
 
